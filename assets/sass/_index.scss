@@ -135,7 +135,7 @@ h1 {
 // section
 
 .section-main {
-    margin-top: 132px;
+    margin:132px 0 130px;
 }
 
 
@@ -187,11 +187,49 @@ h2 {
 }
 
 
+// section article 
 
+.section-article {
+    margin-top:60px;
+    &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+    &__cards {
+    background: rgba(236, 236, 236, 1);
+    padding:58px 20px 37px 21px;
+    
+    b {
+    display:block;
+    font-weight:800;
+    font-size: 18px;
+    margin:77px 0 8px;
+    color:rgba(51, 51, 51, 1);
+    }
+
+    p {
+    font-weight: 400;
+    font-size: 20px;
+    color:rgba(51, 51, 51, 1);
+
+    }
+
+    img[alt='sink'] {
+    height: 205px;
+    }
+
+
+
+    }
+    }
+
+
+}
 
 
 // footer
 .footer-article {
+    margin-top: 132px;
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -202,7 +240,6 @@ h2 {
         display: none;
     }
 }
-
 
 
 .footer-list {
