@@ -3,6 +3,15 @@
     height:740px;
     max-width:1921px;
     margin: auto;
+    
+    &__wrapper {
+        padding-top: 28px;
+        @include flex(0px,flex-end,row)
+    }
+    img {
+    width: 312px;
+    height:128px;
+    }
 }
 
 .header-top {
@@ -69,15 +78,46 @@
 }
 
 .header-middle {
-    padding-top: 67px;
+    padding-top:47px;
 }
 
 .nav-wrapper-list {
     font-size:$middle-font;
     color:$primary_color;
-    display: flex;
-    justify-content:space-between;
+    @include flex(0,space-between,row);
     li {
         list-style: none;
     }
 }
+
+h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 100%;
+}
+
+.header-bottom {
+    padding-top:90px;
+}
+
+.header-bottom-wrapper {
+    @include flex (0,space-between,row);
+    &__left {
+    color: $primary_color;
+    p {
+    font-weight: 400;
+    font-size:$bigger-font;
+    line-height: 100%;
+    letter-spacing: 3%;
+    margin-top:18px;
+    }
+    }
+
+    &__right {
+    img {
+        width:11px;
+        height:111px;
+    }  
+}
+}
+
